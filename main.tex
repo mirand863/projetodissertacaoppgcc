@@ -273,9 +273,11 @@
 
 \textcolor{red}{<Descrever sucintamente o contexto do Projeto de Dissertação, bem como apresentar os principais assuntos a serem discutidos ao longo do documento: objetivos e metas do projeto.>}
 
-\section{Exemplos de uso de figuras, gráficos, referências e citações}
+\section{Exemplos de uso de ilustrações e citações}
 
 A estrutura da molécula de DNA tem formato helicoidal \cite{watson1953molecular}. Um exemplo é ilustrado na \autoref{fig:dna}.
+
+\subsection{Ilustrações}
 
 \begin{figure}[!htb]
 	\caption{Estrutura da molécula de DNA}
@@ -285,8 +287,6 @@ A estrutura da molécula de DNA tem formato helicoidal \cite{watson1953molecular
 	\begin{small}\textbf{Fonte: \citeonline{watson1953molecular}}\end{small}
 \end{figure}
 
-\subsection{Definindo subseções}
-
 \begin{grafico}[!htb]
 	\caption{Projetos de sequenciamento de genomas cadastrados no banco de dados GOLD}
 	\label{grafico:gold}
@@ -294,6 +294,55 @@ A estrutura da molécula de DNA tem formato helicoidal \cite{watson1953molecular
 	\includegraphics[width=.8\textwidth]{gold.pdf} \\
 	\begin{small}\textbf{Fonte: \citeonline{mukherjee2016}}\end{small}
 \end{grafico}
+
+\begin{quadro}[!htb]
+	\centering
+	\caption{Comparação das funcionalidades do \textit{GapBlaster}, \textit{FGAP} e \textit{GapFiller}}
+	\label{quadro:comparacao_funcionalidades}
+	\resizebox{\textwidth}{!}{\begin{tabular}{lccc}
+			\toprule
+			\multicolumn{1}{c}{\textbf{Funcionalidades}} & \textbf{\textit{GapBlaster}} & \textbf{\textit{FGAP}} & \textbf{\textit{GapFiller}} \\ \midrule
+			\rowcolor[HTML]{F3F3F3} 
+			Método de alinhamento & \textit{Legacy Blast}, \textit{Blast+} ou \textit{MUMmer} & \textit{Blast+} & \textit{Bowtie} ou BWA \\
+			\rowcolor[HTML]{DBDEDE} 
+			Ajuste do tamanho da região flanqueadora & Sim & Sim & Sim \\
+			\rowcolor[HTML]{F3F3F3} 
+			Permite curadoria manual & Sim & Não & Não \\
+			\rowcolor[HTML]{DBDEDE} 
+			Realiza análise automática & Sim & Sim & Sim \\
+			\rowcolor[HTML]{F3F3F3} 
+			Usa leituras pareadas para fechar \textit{gaps} & Não & Não & Sim \\
+			\rowcolor[HTML]{DBDEDE} 
+			Usa \textit{contigs} para fechar \textit{gaps} & Sim & Sim & Não \\
+			\rowcolor[HTML]{F3F3F3} 
+			Lê arquivos nos formatos FASTQ, SAM e BAM & Não & Não & Sim \\
+			\rowcolor[HTML]{DBDEDE} 
+			Executa código em paralelo & Não & Sim & Não \\
+			\rowcolor[HTML]{F3F3F3} 
+			Interface gráfica & Sim & Não & Não \\
+			\rowcolor[HTML]{DBDEDE} 
+			Melhora o resultado de outros programas & Sim & Não foi testado & Não foi testado \\
+			\rowcolor[HTML]{F3F3F3} 
+			Fecha \textit{gaps} corretamente & Sim & Sim & Sim \\ \bottomrule \\
+	\end{tabular}}
+	\begin{small}\textbf{Fonte: \citeonline{gapblaster2016}}\end{small}
+\end{quadro}
+
+\begin{foto}[!htb]
+	\caption{Campus da UFPA}
+	\label{foto:ufpa}
+	\centering
+	\includegraphics[width=1\textwidth]{ufpa.jpg} \\
+	\begin{small}\textbf{Fonte: Faculdade de Arquitetura e Urbanismo (2012)}\end{small}
+\end{foto}
+
+\begin{mapa}[!htb]
+	\caption{Mapa mundi}
+	\label{mapa}
+	\centering
+	\includegraphics[width=1\textwidth]{mapa.eps} \\
+	\begin{small}\textbf{Fonte: \citeonline{harley2005nueva}}\end{small}
+\end{mapa}
 
 \chapter{Contextualização e Terminologias do Trabalho}
 \label{cap:contextualizacao}
